@@ -3,7 +3,12 @@
 ## Hodor
 
 ```
-$ irb
+$ cat Gemfile
+gem 'hodor', git: 'git://github.com/davidh-raybeam/hodor.git'
+$ bundle install
+ # ...
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed
+$ bundle exec irb
 2.1.1 :001 > require 'hodor'
  => true 
 2.1.1 :002 > Hodor
