@@ -6,7 +6,7 @@ class IO
     args.each do |arg|
       if arg == Hodor
         puts_without_hodor 'Hodor'
-      elsif Array === arg.to_ary
+      elsif arg.respond_to?(:to_ary) && Array === arg.to_ary
         puts *arg.to_ary
       else
         puts_without_hodor arg
